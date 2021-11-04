@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
 
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -17,10 +22,10 @@ středně široké obrazovky:
 }
 */
 
-
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 .paticka {
@@ -33,8 +38,69 @@ body {
     color: silver;
 }
 
-
 /* ------------------------------- */
+
 /* ----- DOLE BUDE TVOJE CSS ----- */
+
 /* ------------------------------- */
 
+.nadpisHlavni {
+    font-size: 1.75rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: fixed;
+    object-position: bottom;
+}
+
+.nadpis {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: fixed;
+    object-position: bottom;
+}
+
+.sekce {
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.komenty {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.burger {
+    background-image: url("images/burger.jpg");
+    min-height: 200px;
+}
+
+.sushi {
+    background-image: url("images/sushi.jpg");
+    min-height: 90px;
+}
+
+.kure {
+    background-image: url("images/kure.jpg");
+    min-height: 90px;
+}
+
+.rajska {
+    background-image: url("images/rajcata.jpg");
+    min-height: 90px;
+}
+
+.gril {
+    background-image: url("images/grilovani.jpg");
+    min-height: 90px;
+}
