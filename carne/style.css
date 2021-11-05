@@ -26,6 +26,8 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .paticka {
@@ -44,14 +46,18 @@ body {
 
 /* ------------------------------- */
 
+.hlavicka {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .nadpisHlavni {
     font-size: 1.75rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
-    position: fixed;
-    object-position: bottom;
 }
 
 .nadpis {
@@ -60,8 +66,6 @@ body {
     font-weight: 800;
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
-    position: fixed;
-    object-position: bottom;
 }
 
 .sekce {
@@ -70,6 +74,8 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     padding-left: 0.5rem;
     padding-top: 0.5rem;
+    display: flex;
+    left: auto;
 }
 
 .komenty {
@@ -82,25 +88,132 @@ body {
 
 .burger {
     background-image: url("images/burger.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 200px;
 }
 
 .sushi {
     background-image: url("images/sushi.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 90px;
 }
 
 .kure {
     background-image: url("images/kure.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 90px;
 }
 
 .rajska {
     background-image: url("images/rajcata.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 90px;
 }
 
 .gril {
     background-image: url("images/grilovani.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 90px;
+}
+
+@media screen and (min-width: 500px) {
+    .nadpisHlavni {
+        font-size: 2rem;
+        padding-left: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .nadpis {
+        font-size: 1.5rem;
+        padding-left: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .sekce {
+        padding-left: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .komenty {
+        padding-right: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .mensi {
+        display: flex;
+    }
+    .sloupec1 {
+        flex-direction: column;
+    }
+    .sloupec2 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nadpisHlavni {
+        font-size: 3rem;
+        padding-left: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .burger {
+        width: 33.3%;
+        min-height: 400px;
+    }
+    .nadpis {
+        font-size: 1.75rem;
+        padding-left: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .sekce {
+        padding-left: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .komenty {
+        padding-right: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .mensi {
+        display: flex;
+        flex-direction: row;
+    }
+    .sloupec1 {
+        flex-direction: column;
+        width: 33.3%;
+    }
+    .sloupec2 {
+        flex-direction: column;
+        width: 33.3%;
+    }
+    .sushi {
+        min-height: 200px;
+    }
+    .rajska {
+        min-height: 200px;
+    }
+    .kure {
+        min-height: 200px;
+    }
+    .gril {
+        min-height: 200px;
+    }
 }
