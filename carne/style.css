@@ -94,6 +94,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 200px;
+    flex: 1 100%;
 }
 
 .sushi {
@@ -145,27 +146,35 @@ body {
         padding-left: 1.25rem;
         padding-bottom: 1.25rem;
     }
+
     .nadpis {
         font-size: 1.5rem;
         padding-left: 1.25rem;
         padding-bottom: 1.25rem;
     }
+
     .sekce {
         padding-left: 1.25rem;
         padding-top: 1.25rem;
     }
+
     .komenty {
         padding-right: 1.25rem;
         padding-top: 1.25rem;
     }
+
     .mensi {
         display: flex;
     }
+
     .sloupec1 {
         flex-direction: column;
+        flex: 50%;
     }
+
     .sloupec2 {
         flex-direction: column;
+        flex: 50%;
     }
 }
 
@@ -175,44 +184,59 @@ body {
         padding-left: 1.25rem;
         padding-bottom: 1.25rem;
     }
+
+    .doporucujeme {
+        display: flex;
+    }
+
     .burger {
-        width: 33.3%;
+        flex: 33.3%;
         min-height: 400px;
     }
+
     .nadpis {
         font-size: 1.75rem;
         padding-left: 1.25rem;
         padding-bottom: 1.25rem;
     }
+
     .sekce {
         padding-left: 1.25rem;
         padding-top: 1.25rem;
     }
+
     .komenty {
         padding-right: 1.25rem;
         padding-top: 1.25rem;
     }
+
     .mensi {
         display: flex;
         flex-direction: row;
     }
+
     .sloupec1 {
         flex-direction: column;
-        width: 33.3%;
+        width: 50%;
     }
+
     .sloupec2 {
         flex-direction: column;
-        width: 33.3%;
+        width: 50%;
     }
+
     .sushi {
         min-height: 200px;
     }
+
     .rajska {
         min-height: 200px;
     }
+
     .kure {
         min-height: 200px;
     }
+
     .gril {
         min-height: 200px;
     }
